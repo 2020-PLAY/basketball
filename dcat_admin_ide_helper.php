@@ -45,8 +45,6 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection post_author
      * @property Grid\Column|Collection post_content
      * @property Grid\Column|Collection post_title
-     * @property Grid\Column|Collection create_time
-     * @property Grid\Column|Collection update_time
      * @property Grid\Column|Collection email
      * @property Grid\Column|Collection token
      *
@@ -84,8 +82,6 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection post_author(string $label = null)
      * @method Grid\Column|Collection post_content(string $label = null)
      * @method Grid\Column|Collection post_title(string $label = null)
-     * @method Grid\Column|Collection create_time(string $label = null)
-     * @method Grid\Column|Collection update_time(string $label = null)
      * @method Grid\Column|Collection email(string $label = null)
      * @method Grid\Column|Collection token(string $label = null)
      */
@@ -128,8 +124,6 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection post_author
      * @property Show\Field|Collection post_content
      * @property Show\Field|Collection post_title
-     * @property Show\Field|Collection create_time
-     * @property Show\Field|Collection update_time
      * @property Show\Field|Collection email
      * @property Show\Field|Collection token
      *
@@ -167,8 +161,6 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection post_author(string $label = null)
      * @method Show\Field|Collection post_content(string $label = null)
      * @method Show\Field|Collection post_title(string $label = null)
-     * @method Show\Field|Collection create_time(string $label = null)
-     * @method Show\Field|Collection update_time(string $label = null)
      * @method Show\Field|Collection email(string $label = null)
      * @method Show\Field|Collection token(string $label = null)
      */

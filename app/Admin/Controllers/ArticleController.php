@@ -29,7 +29,7 @@ class ArticleController extends AdminController
         return Grid::make(new Article(), function (Grid $grid) {
             $grid->column('id')->sortable();
             $grid->column('post_author');
-            $grid->column('post_content');
+            $grid->column('post_content')->sortable();
             $grid->column('post_title');
             $grid->column('created_at','创建时间');
             $grid->column('updated_at','更新时间');
