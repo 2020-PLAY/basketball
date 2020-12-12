@@ -8,7 +8,7 @@ use Dcat\Admin\Grid;
 use Dcat\Admin\Show;
 use Dcat\Admin\Layout\Content;
 use Dcat\Admin\Controllers\AdminController;
-
+use App\Admin\Controllers\PreviewCode;
 class ArticleController extends AdminController
 {
     public function index(Content $content)
@@ -31,12 +31,10 @@ class ArticleController extends AdminController
             $grid->column('post_author');
             $grid->column('post_content');
             $grid->column('post_title');
-            $grid->column('create_time','创建时间');
-            $grid->column('update_time','更新时间');
-        
+            $grid->column('created_at','创建时间');
+            $grid->column('updated_at','更新时间');
             $grid->filter(function (Grid\Filter $filter) {
                 $filter->equal('id');
-        
             });
         });
     }
@@ -55,8 +53,8 @@ class ArticleController extends AdminController
             $show->field('post_author');
             $show->field('post_content');
             $show->field('post_title');
-            $show->field('create_time');
-            $show->field('update_time');
+            $show->field('created_at');
+            $show->field('updated_at');
         });
     }
 
@@ -70,8 +68,8 @@ class ArticleController extends AdminController
         return Form::make(new Article(), function (Form $form) {
             $form->display('id');
             $form->text('post_author');
-            $form->text('post_content');
             $form->text('post_title');
+            $form->ueditor('post_content');
 
         });
     }

@@ -9,6 +9,6 @@ class Article extends Model
 {
 	
     protected $table = 'article';
-    public $timestamps = false;
+    public $timestamps = true;
 
 }

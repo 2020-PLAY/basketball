@@ -175,7 +175,7 @@ namespace Dcat\Admin {
     class Show {}
 
     /**
-     
+     * @method \Dcat\Admin\Extension\UEditor\Form\UEditor ueditor(...$params)
      */
     class Form {}
 
