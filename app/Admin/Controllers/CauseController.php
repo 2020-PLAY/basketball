@@ -32,23 +32,21 @@ class CauseController extends AdminController
             $grid->column('id')->sortable();
             $grid->column('user_name');
             $grid->column('causation')->limit(2)->responsive();
+            $grid->column('img','请假证明')->image('','100','100');
             $grid->column('type','请假类型')->display(function ($value){
                 if ($value == 1){
                     return '个人请假';
-                }elseif ($value == 2){
-                    return '重大事假';
                 }else{
-                    return '球队请假';
+                    return '重大事假';
                 }
             });
-
             $grid->column('created_at')->sortable();;
             $grid->responsive();
             $grid->filter(function (Grid\Filter $filter) {
                 $filter->equal('id');
             });
             $grid->selector(function (Grid\Tools\Selector $selector) {
-                $selector->select('type', '请假类型', [1=>'个人请假', 2=>'重大事假',3=>'球队请假']);
+                $selector->select('type', '请假类型', [1=>'个人请假', 2=>'重大事假']);
               });
         });
     }
@@ -67,6 +65,7 @@ class CauseController extends AdminController
             $show->field('user_name');
             $show->field('causation');
             $show->field('type');
+            $show->field('img');
             $show->field('created_at');
         });
     }
@@ -82,7 +81,8 @@ class CauseController extends AdminController
             $form->display('id');
             $form->text('user_name');
             $form->text('causation');
-            $form->select('type','请假类型')->options([1 => '个人请假', 2 => '重大事假', 3 => '球队请假']);;
+            $form->file('img','证明材料');
+            $form->select('type','请假类型')->options([1 => '个人请假', 2 => '重大事假']);;
             $form->datetime('created_at');
         });
     }

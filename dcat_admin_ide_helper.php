@@ -48,6 +48,9 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection user_name
      * @property Grid\Column|Collection causation
      * @property Grid\Column|Collection type
+     * @property Grid\Column|Collection img
+     * @property Grid\Column|Collection status
+     * @property Grid\Column|Collection user_tel
      * @property Grid\Column|Collection email
      * @property Grid\Column|Collection token
      *
@@ -88,6 +91,9 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection user_name(string $label = null)
      * @method Grid\Column|Collection causation(string $label = null)
      * @method Grid\Column|Collection type(string $label = null)
+     * @method Grid\Column|Collection img(string $label = null)
+     * @method Grid\Column|Collection status(string $label = null)
+     * @method Grid\Column|Collection user_tel(string $label = null)
      * @method Grid\Column|Collection email(string $label = null)
      * @method Grid\Column|Collection token(string $label = null)
      */
@@ -133,6 +139,9 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection user_name
      * @property Show\Field|Collection causation
      * @property Show\Field|Collection type
+     * @property Show\Field|Collection img
+     * @property Show\Field|Collection status
+     * @property Show\Field|Collection user_tel
      * @property Show\Field|Collection email
      * @property Show\Field|Collection token
      *
@@ -173,6 +182,9 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection user_name(string $label = null)
      * @method Show\Field|Collection causation(string $label = null)
      * @method Show\Field|Collection type(string $label = null)
+     * @method Show\Field|Collection img(string $label = null)
+     * @method Show\Field|Collection status(string $label = null)
+     * @method Show\Field|Collection user_tel(string $label = null)
      * @method Show\Field|Collection email(string $label = null)
      * @method Show\Field|Collection token(string $label = null)
      */
