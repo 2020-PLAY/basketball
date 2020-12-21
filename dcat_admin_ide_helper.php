@@ -20,6 +20,7 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection config
      * @property Grid\Column|Collection require
      * @property Grid\Column|Collection require_dev
+     * @property Grid\Column|Collection status
      * @property Grid\Column|Collection id
      * @property Grid\Column|Collection parent_id
      * @property Grid\Column|Collection order
@@ -49,10 +50,41 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection causation
      * @property Grid\Column|Collection type
      * @property Grid\Column|Collection img
-     * @property Grid\Column|Collection status
      * @property Grid\Column|Collection user_tel
+     * @property Grid\Column|Collection check
+     * @property Grid\Column|Collection class_name
+     * @property Grid\Column|Collection team_id
+     * @property Grid\Column|Collection class_time
      * @property Grid\Column|Collection email
      * @property Grid\Column|Collection token
+     * @property Grid\Column|Collection team_name
+     * @property Grid\Column|Collection member
+     * @property Grid\Column|Collection openid
+     * @property Grid\Column|Collection unionid
+     * @property Grid\Column|Collection wx_nickname
+     * @property Grid\Column|Collection wx_sex
+     * @property Grid\Column|Collection wx_province
+     * @property Grid\Column|Collection wx_city
+     * @property Grid\Column|Collection wx_country
+     * @property Grid\Column|Collection wx_headimgurl
+     * @property Grid\Column|Collection wx_privilege
+     * @property Grid\Column|Collection wx_language
+     * @property Grid\Column|Collection user_nickname
+     * @property Grid\Column|Collection user_headimgurl
+     * @property Grid\Column|Collection user_phone
+     * @property Grid\Column|Collection register_phone
+     * @property Grid\Column|Collection user_email
+     * @property Grid\Column|Collection user_id_card
+     * @property Grid\Column|Collection user_provice
+     * @property Grid\Column|Collection user_city
+     * @property Grid\Column|Collection user_area
+     * @property Grid\Column|Collection create_time
+     * @property Grid\Column|Collection update_time
+     * @property Grid\Column|Collection register_time
+     * @property Grid\Column|Collection auth_time
+     * @property Grid\Column|Collection login_time
+     * @property Grid\Column|Collection user_status
+     * @property Grid\Column|Collection user_team
      *
      * @method Grid\Column|Collection name(string $label = null)
      * @method Grid\Column|Collection version(string $label = null)
@@ -63,6 +95,7 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection config(string $label = null)
      * @method Grid\Column|Collection require(string $label = null)
      * @method Grid\Column|Collection require_dev(string $label = null)
+     * @method Grid\Column|Collection status(string $label = null)
      * @method Grid\Column|Collection id(string $label = null)
      * @method Grid\Column|Collection parent_id(string $label = null)
      * @method Grid\Column|Collection order(string $label = null)
@@ -92,10 +125,41 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection causation(string $label = null)
      * @method Grid\Column|Collection type(string $label = null)
      * @method Grid\Column|Collection img(string $label = null)
-     * @method Grid\Column|Collection status(string $label = null)
      * @method Grid\Column|Collection user_tel(string $label = null)
+     * @method Grid\Column|Collection check(string $label = null)
+     * @method Grid\Column|Collection class_name(string $label = null)
+     * @method Grid\Column|Collection team_id(string $label = null)
+     * @method Grid\Column|Collection class_time(string $label = null)
      * @method Grid\Column|Collection email(string $label = null)
      * @method Grid\Column|Collection token(string $label = null)
+     * @method Grid\Column|Collection team_name(string $label = null)
+     * @method Grid\Column|Collection member(string $label = null)
+     * @method Grid\Column|Collection openid(string $label = null)
+     * @method Grid\Column|Collection unionid(string $label = null)
+     * @method Grid\Column|Collection wx_nickname(string $label = null)
+     * @method Grid\Column|Collection wx_sex(string $label = null)
+     * @method Grid\Column|Collection wx_province(string $label = null)
+     * @method Grid\Column|Collection wx_city(string $label = null)
+     * @method Grid\Column|Collection wx_country(string $label = null)
+     * @method Grid\Column|Collection wx_headimgurl(string $label = null)
+     * @method Grid\Column|Collection wx_privilege(string $label = null)
+     * @method Grid\Column|Collection wx_language(string $label = null)
+     * @method Grid\Column|Collection user_nickname(string $label = null)
+     * @method Grid\Column|Collection user_headimgurl(string $label = null)
+     * @method Grid\Column|Collection user_phone(string $label = null)
+     * @method Grid\Column|Collection register_phone(string $label = null)
+     * @method Grid\Column|Collection user_email(string $label = null)
+     * @method Grid\Column|Collection user_id_card(string $label = null)
+     * @method Grid\Column|Collection user_provice(string $label = null)
+     * @method Grid\Column|Collection user_city(string $label = null)
+     * @method Grid\Column|Collection user_area(string $label = null)
+     * @method Grid\Column|Collection create_time(string $label = null)
+     * @method Grid\Column|Collection update_time(string $label = null)
+     * @method Grid\Column|Collection register_time(string $label = null)
+     * @method Grid\Column|Collection auth_time(string $label = null)
+     * @method Grid\Column|Collection login_time(string $label = null)
+     * @method Grid\Column|Collection user_status(string $label = null)
+     * @method Grid\Column|Collection user_team(string $label = null)
      */
     class Grid {}
 
@@ -111,6 +175,7 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection config
      * @property Show\Field|Collection require
      * @property Show\Field|Collection require_dev
+     * @property Show\Field|Collection status
      * @property Show\Field|Collection id
      * @property Show\Field|Collection parent_id
      * @property Show\Field|Collection order
@@ -140,10 +205,41 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection causation
      * @property Show\Field|Collection type
      * @property Show\Field|Collection img
-     * @property Show\Field|Collection status
      * @property Show\Field|Collection user_tel
+     * @property Show\Field|Collection check
+     * @property Show\Field|Collection class_name
+     * @property Show\Field|Collection team_id
+     * @property Show\Field|Collection class_time
      * @property Show\Field|Collection email
      * @property Show\Field|Collection token
+     * @property Show\Field|Collection team_name
+     * @property Show\Field|Collection member
+     * @property Show\Field|Collection openid
+     * @property Show\Field|Collection unionid
+     * @property Show\Field|Collection wx_nickname
+     * @property Show\Field|Collection wx_sex
+     * @property Show\Field|Collection wx_province
+     * @property Show\Field|Collection wx_city
+     * @property Show\Field|Collection wx_country
+     * @property Show\Field|Collection wx_headimgurl
+     * @property Show\Field|Collection wx_privilege
+     * @property Show\Field|Collection wx_language
+     * @property Show\Field|Collection user_nickname
+     * @property Show\Field|Collection user_headimgurl
+     * @property Show\Field|Collection user_phone
+     * @property Show\Field|Collection register_phone
+     * @property Show\Field|Collection user_email
+     * @property Show\Field|Collection user_id_card
+     * @property Show\Field|Collection user_provice
+     * @property Show\Field|Collection user_city
+     * @property Show\Field|Collection user_area
+     * @property Show\Field|Collection create_time
+     * @property Show\Field|Collection update_time
+     * @property Show\Field|Collection register_time
+     * @property Show\Field|Collection auth_time
+     * @property Show\Field|Collection login_time
+     * @property Show\Field|Collection user_status
+     * @property Show\Field|Collection user_team
      *
      * @method Show\Field|Collection name(string $label = null)
      * @method Show\Field|Collection version(string $label = null)
@@ -154,6 +250,7 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection config(string $label = null)
      * @method Show\Field|Collection require(string $label = null)
      * @method Show\Field|Collection require_dev(string $label = null)
+     * @method Show\Field|Collection status(string $label = null)
      * @method Show\Field|Collection id(string $label = null)
      * @method Show\Field|Collection parent_id(string $label = null)
      * @method Show\Field|Collection order(string $label = null)
@@ -183,10 +280,41 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection causation(string $label = null)
      * @method Show\Field|Collection type(string $label = null)
      * @method Show\Field|Collection img(string $label = null)
-     * @method Show\Field|Collection status(string $label = null)
      * @method Show\Field|Collection user_tel(string $label = null)
+     * @method Show\Field|Collection check(string $label = null)
+     * @method Show\Field|Collection class_name(string $label = null)
+     * @method Show\Field|Collection team_id(string $label = null)
+     * @method Show\Field|Collection class_time(string $label = null)
      * @method Show\Field|Collection email(string $label = null)
      * @method Show\Field|Collection token(string $label = null)
+     * @method Show\Field|Collection team_name(string $label = null)
+     * @method Show\Field|Collection member(string $label = null)
+     * @method Show\Field|Collection openid(string $label = null)
+     * @method Show\Field|Collection unionid(string $label = null)
+     * @method Show\Field|Collection wx_nickname(string $label = null)
+     * @method Show\Field|Collection wx_sex(string $label = null)
+     * @method Show\Field|Collection wx_province(string $label = null)
+     * @method Show\Field|Collection wx_city(string $label = null)
+     * @method Show\Field|Collection wx_country(string $label = null)
+     * @method Show\Field|Collection wx_headimgurl(string $label = null)
+     * @method Show\Field|Collection wx_privilege(string $label = null)
+     * @method Show\Field|Collection wx_language(string $label = null)
+     * @method Show\Field|Collection user_nickname(string $label = null)
+     * @method Show\Field|Collection user_headimgurl(string $label = null)
+     * @method Show\Field|Collection user_phone(string $label = null)
+     * @method Show\Field|Collection register_phone(string $label = null)
+     * @method Show\Field|Collection user_email(string $label = null)
+     * @method Show\Field|Collection user_id_card(string $label = null)
+     * @method Show\Field|Collection user_provice(string $label = null)
+     * @method Show\Field|Collection user_city(string $label = null)
+     * @method Show\Field|Collection user_area(string $label = null)
+     * @method Show\Field|Collection create_time(string $label = null)
+     * @method Show\Field|Collection update_time(string $label = null)
+     * @method Show\Field|Collection register_time(string $label = null)
+     * @method Show\Field|Collection auth_time(string $label = null)
+     * @method Show\Field|Collection login_time(string $label = null)
+     * @method Show\Field|Collection user_status(string $label = null)
+     * @method Show\Field|Collection user_team(string $label = null)
      */
     class Show {}
 
