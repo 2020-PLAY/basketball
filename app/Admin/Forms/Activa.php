@@ -16,7 +16,7 @@ class Activa extends Form
      */
     public function handle(array $input)
     {
-         dump($input);
+
 
         // return $this->error('Your error message.');
 
@@ -28,8 +28,9 @@ class Activa extends Form
      */
     public function form()
     {
-        $this->text('name')->required();
-        $this->email('email')->rules('email');
+//        $this->text('name')->required();
+//        $this->email('email')->rules('email');
+
     }
 
     /**
